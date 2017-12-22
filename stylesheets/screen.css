@@ -1,0 +1,1053 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,900");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
+/* line 5, ../sass/screen.scss */
+*:focus {
+  outline: 0;
+}
+
+/* line 5, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/screen.scss */
+.header {
+  background: url(../image/header-bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 19, ../sass/screen.scss */
+.header-content {
+  width: 960px;
+  padding: 15px 10px 40px 10px;
+}
+
+/* line 23, ../sass/screen.scss */
+.container {
+  width: 960px;
+}
+
+/* line 26, ../sass/screen.scss */
+.navigator {
+  width: 100%;
+}
+
+/* line 29, ../sass/screen.scss */
+.nav-callapse {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 33, ../sass/screen.scss */
+.brand img {
+  float: left;
+}
+
+/* line 36, ../sass/screen.scss */
+ul.navbar-nav {
+  float: right;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 0;
+}
+
+/* line 42, ../sass/screen.scss */
+li.nav-item {
+  margin-left: 25px;
+  line-height: 2;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 11pt;
+}
+
+/* line 50, ../sass/screen.scss */
+.brand:hover {
+  text-decoration: none;
+  color: #247285;
+}
+
+/* line 54, ../sass/screen.scss */
+.nav-link:hover {
+  text-decoration: none;
+  color: #00e0d0;
+}
+
+/* line 58, ../sass/screen.scss */
+.nav-link:visited {
+  text-decoration: none;
+}
+
+/* line 61, ../sass/screen.scss */
+.nav-link {
+  color: white;
+}
+
+/* line 64, ../sass/screen.scss */
+a.active {
+  color: #00e0d0;
+}
+
+/* line 67, ../sass/screen.scss */
+a:focus {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* line 71, ../sass/screen.scss */
+.nav-callapse {
+  padding: 15px 0px;
+}
+
+/* line 74, ../sass/screen.scss */
+.navigator-fixed {
+  position: fixed;
+  width: 100%;
+  transition: 1s;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding: 20px 0px;
+  background-color: rgba(48, 35, 95, 0.8);
+}
+
+/* line 85, ../sass/screen.scss */
+.navigator-fixed .nav-callapse {
+  padding: 0px;
+}
+
+/* line 90, ../sass/screen.scss */
+.header-main {
+  max-width: 780px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+/* line 95, ../sass/screen.scss */
+.header-main h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 30pt;
+  color: white;
+  text-align: center;
+}
+
+/* line 102, ../sass/screen.scss */
+.header-main hr {
+  height: 2px;
+  width: 50px;
+  border: none;
+  color: #05d1c5;
+  background-color: #05d1c5;
+}
+
+/* line 109, ../sass/screen.scss */
+.header-main p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  color: white;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* line 117, ../sass/screen.scss */
+.center-button {
+  margin-top: 50px;
+  margin-bottom: 85px;
+}
+
+/* line 121, ../sass/screen.scss */
+.button {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 14pt;
+  color: #05d1c5;
+  padding: 15px;
+  cursor: pointer;
+  transition: 1s;
+  border: 1px solid #05d1c5;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* line 132, ../sass/screen.scss */
+.button-h:hover {
+  transition: 1s;
+  color: white;
+  background-color: #05d1c5;
+}
+
+/* line 137, ../sass/screen.scss */
+.slider {
+  margin-top: 125px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* line 142, ../sass/screen.scss */
+.circle {
+  width: 12px;
+  cursor: pointer;
+  height: 12px;
+  display: inline-block;
+  border-radius: 6px;
+  border: 2px solid #554e6c;
+}
+
+/* line 150, ../sass/screen.scss */
+.circle-active {
+  background-color: #05d1c5;
+  border: 2px solid #05d1c5;
+}
+
+/* line 154, ../sass/screen.scss */
+.content {
+  margin-top: 70px;
+  padding: 0;
+}
+
+/* line 158, ../sass/screen.scss */
+.main-content {
+  padding: 0px 10px 0px 10px;
+}
+
+/* line 161, ../sass/screen.scss */
+.section-1 {
+  margin-left: 60px;
+}
+
+/* line 164, ../sass/screen.scss */
+.section-1 img {
+  float: left;
+}
+
+/* line 168, ../sass/screen.scss */
+.section-1-text {
+  float: left;
+  max-width: 540px;
+  margin-left: 100px;
+}
+
+/* line 174, ../sass/screen.scss */
+.section-1-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 20pt;
+  color: #413d4b;
+}
+
+/* line 181, ../sass/screen.scss */
+.section-1-text p {
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  color: #413d4b;
+}
+
+/* line 188, ../sass/screen.scss */
+.section-1-button {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 14pt;
+  color: #05d1c5;
+  padding: 15px;
+  transition: 1s;
+  cursor: pointer;
+  float: left;
+  margin-left: 100px;
+  margin-top: 35px;
+  margin-bottom: 70px;
+  border: 1px solid #05d1c5;
+}
+
+/* line 201, ../sass/screen.scss */
+.video-content {
+  background: url(../image/video-bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 0px;
+}
+
+/* line 206, ../sass/screen.scss */
+.video-container {
+  height: 550px;
+}
+
+/* line 209, ../sass/screen.scss */
+.center-video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 215, ../sass/screen.scss */
+.watch {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 14pt;
+  color: white;
+  text-align: center;
+}
+
+/* line 222, ../sass/screen.scss */
+.watch-text {
+  margin-top: 35px;
+  display: block;
+}
+
+/* line 226, ../sass/screen.scss */
+.main-content2 {
+  margin-top: 70px;
+  padding-left: 10px;
+}
+
+/* line 230, ../sass/screen.scss */
+.title-content h1 {
+  text-align: center;
+  color: #4b4855;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 20pt;
+}
+
+/* line 237, ../sass/screen.scss */
+.title-content p {
+  margin-top: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 12pt;
+  color: #b8b8ba;
+  text-align: center;
+}
+
+/* line 245, ../sass/screen.scss */
+.title-content hr {
+  width: 50px;
+  height: 2px;
+  border: none;
+  color: #b8b8ba;
+  background-color: #b8b8ba;
+}
+
+/* line 252, ../sass/screen.scss */
+.block-line-2 {
+  margin-top: 1px;
+}
+
+/* line 255, ../sass/screen.scss */
+.Expertise-item {
+  margin-top: 65px;
+  width: 940px;
+  height: 515px;
+  background-color: #f8f8f8;
+}
+
+/* line 261, ../sass/screen.scss */
+.block-item {
+  background-color: white;
+  float: left;
+  display: inline-block;
+  width: 310px;
+}
+
+/* line 267, ../sass/screen.scss */
+.block-item p {
+  padding-top: 35px;
+  text-align: center;
+}
+
+/* line 271, ../sass/screen.scss */
+.title-item {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 12pt;
+  color: #474351;
+  display: block;
+}
+
+/* line 280, ../sass/screen.scss */
+.text-item {
+  max-width: 260px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  margin-top: 25px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* line 291, ../sass/screen.scss */
+.block-line {
+  margin-left: 1px;
+}
+
+/* line 294, ../sass/screen.scss */
+.block-center {
+  width: 318px;
+}
+
+/* line 297, ../sass/screen.scss */
+.block-line-center {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #f8f8f8;
+}
+
+/* line 303, ../sass/screen.scss */
+.main-content2 {
+  margin-bottom: 70px;
+}
+
+/* line 306, ../sass/screen.scss */
+.content3 {
+  background: url(../image/c3-bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 312, ../sass/screen.scss */
+.main-content3 {
+  padding: 0 10px;
+  padding-top: 70px;
+}
+
+/* line 316, ../sass/screen.scss */
+.team h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 20pt;
+  text-align: center;
+  color: white;
+}
+
+/* line 323, ../sass/screen.scss */
+.team p {
+  margin-top: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 12pt;
+  text-align: center;
+  color: #f9f9f9;
+}
+
+/* line 331, ../sass/screen.scss */
+.team hr {
+  width: 50px;
+  height: 2px;
+  border: none;
+  color: #584e75;
+  background-color: #584e75;
+}
+
+/* line 338, ../sass/screen.scss */
+.teams {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* line 342, ../sass/screen.scss */
+.men {
+  width: 220px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 70px;
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
+}
+
+/* line 351, ../sass/screen.scss */
+.men:first-child {
+  margin-left: 0px;
+}
+
+/* line 354, ../sass/screen.scss */
+.photo {
+  height: 230px;
+  background-color: white;
+}
+
+/* line 358, ../sass/screen.scss */
+.name {
+  height: 80px;
+  border: 1px solid white;
+  border-top-width: 0px;
+  border-radius: 1px;
+}
+
+/* line 364, ../sass/screen.scss */
+.name h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 12pt;
+}
+
+/* line 369, ../sass/screen.scss */
+.name p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-top: 12px;
+  font-size: 11pt;
+  color: #fafafa;
+}
+
+/* line 376, ../sass/screen.scss */
+.text-center {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 382, ../sass/screen.scss */
+.team h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  color: #f3f3f3;
+  margin-bottom: 50px;
+}
+
+/* line 390, ../sass/screen.scss */
+.button-2 {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 14pt;
+  color: #05d1c5;
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid #05d1c5;
+  transition: 1s;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* line 401, ../sass/screen.scss */
+.main-content4 {
+  margin-top: 70px;
+  padding: 0 10px;
+  display: block;
+}
+
+/* line 406, ../sass/screen.scss */
+h1.left {
+  float: left;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 20pt;
+  color: #413d4b;
+}
+
+/* line 413, ../sass/screen.scss */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 12pt;
+  color: #413d4b;
+}
+
+/* line 420, ../sass/screen.scss */
+h2.right {
+  float: right;
+}
+
+/* line 423, ../sass/screen.scss */
+h2 img {
+  transform: translate(0, 5px);
+}
+
+/* line 427, ../sass/screen.scss */
+.g-items {
+  margin-top: 70px;
+  font-size: 0pt;
+  margin-bottom: 85px;
+}
+
+/* line 432, ../sass/screen.scss */
+.g-item {
+  display: inline-block;
+  height: 200px;
+  width: 265px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  transition: 1s;
+  cursor: pointer;
+  font-size: 0;
+}
+
+/* line 443, ../sass/screen.scss */
+.g-item:hover {
+  transform: rotateY(360deg);
+  transition: 1s;
+}
+
+/* line 447, ../sass/screen.scss */
+.more {
+  width: 140px;
+  margin: 0 auto;
+}
+
+/* line 451, ../sass/screen.scss */
+.button-m {
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 14pt;
+  color: #05d1c5;
+  cursor: pointer;
+  border: 1px solid #05d1c5;
+  transition: 1s;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+}
+
+/* line 462, ../sass/screen.scss */
+.gallery {
+  margin-bottom: 85px;
+  display: block;
+}
+
+/* line 466, ../sass/screen.scss */
+.content4 {
+  margin-bottom: 70px;
+}
+
+/* line 469, ../sass/screen.scss */
+.content5 {
+  background: url(../image/c-5.png) no-repeat center center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 477, ../sass/screen.scss */
+.Testimonials {
+  margin-top: 70px;
+}
+
+/* line 480, ../sass/screen.scss */
+.quotes {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* line 484, ../sass/screen.scss */
+.center-text {
+  margin: 0 auto;
+  max-width: 780px;
+  margin-bottom: 50px;
+}
+
+/* line 489, ../sass/screen.scss */
+.Testimonials p {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 14pt;
+}
+
+/* line 496, ../sass/screen.scss */
+.Testimonials h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 12pt;
+  text-align: center;
+  color: #f3f3f5;
+}
+
+/* line 503, ../sass/screen.scss */
+.Testimonials h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 11pt;
+  text-align: center;
+  margin-top: 13px;
+  color: #ffffff;
+}
+
+/* line 511, ../sass/screen.scss */
+.personal-photo {
+  margin: 0 auto;
+  margin-top: 45px;
+  width: 400px;
+}
+
+/* line 516, ../sass/screen.scss */
+.box-photo {
+  height: 70px;
+  margin-bottom: 70px;
+}
+
+/* line 520, ../sass/screen.scss */
+.back {
+  margin-right: 30px;
+  display: inline-block;
+  background: url(../image/icon/back.png);
+  float: left;
+  width: 11px;
+  height: 21px;
+  cursor: pointer;
+  transform: translateY(40px);
+}
+
+/* line 530, ../sass/screen.scss */
+.center {
+  display: inline-block;
+  float: left;
+}
+
+/* line 534, ../sass/screen.scss */
+.center img:not(:first-child) {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* line 538, ../sass/screen.scss */
+.next {
+  display: inline-block;
+  background: url(../image/icon/next.png) no-repeat;
+  float: left;
+  width: 11px;
+  height: 21px;
+  margin-left: 30px;
+  transform: translateY(40px);
+  cursor: pointer;
+}
+
+/* line 548, ../sass/screen.scss */
+.contact-main {
+  padding: 0px;
+}
+
+/* line 551, ../sass/screen.scss */
+.contact-info {
+  padding: 0px 10px;
+  margin-top: 70px;
+}
+
+/* line 555, ../sass/screen.scss */
+.contact-form {
+  width: 460px;
+  float: left;
+  display: inline-block;
+  margin-bottom: 70px;
+}
+
+/* line 561, ../sass/screen.scss */
+.client {
+  margin-left: 99px;
+  float: left;
+  display: inline-block;
+  width: 380px;
+}
+
+/* line 567, ../sass/screen.scss */
+.contact-form h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 20pt;
+  color: #413d4b;
+  margin-bottom: 35px;
+}
+
+/* line 574, ../sass/screen.scss */
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  color: #333;
+  outline: 0;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* line 583, ../sass/screen.scss */
+.contact-form textarea {
+  height: 200px;
+}
+
+/* line 586, ../sass/screen.scss */
+.contact-form a.submit {
+  width: 120px;
+  border: 1px solid #00e0d0;
+  color: #00e0d0;
+  display: block;
+  text-align: center;
+  padding: 8px 0;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+/* line 595, ../sass/screen.scss */
+.contact-form a.submit:hover {
+  background: #00e0d0;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+/* line 602, ../sass/screen.scss */
+.client h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 20pt;
+  color: #413d4b;
+}
+
+/* line 608, ../sass/screen.scss */
+.client ul li:first-child {
+  margin-top: 40px;
+}
+
+/* line 611, ../sass/screen.scss */
+.col-1 {
+  float: left;
+}
+
+/* line 614, ../sass/screen.scss */
+.col-2 {
+  float: right;
+}
+
+/* line 617, ../sass/screen.scss */
+.footer {
+  background: url(../image/footer-bg.png) no-repeat center center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 623, ../sass/screen.scss */
+.footer-main {
+  padding: 0;
+}
+
+/* line 626, ../sass/screen.scss */
+.box-footer {
+  margin-top: 70px;
+  padding: 0 10px;
+}
+
+/* line 630, ../sass/screen.scss */
+.footer-col-1 {
+  float: left;
+}
+
+/* line 633, ../sass/screen.scss */
+.footer-col-1 p {
+  margin-top: 25px;
+  max-width: 285px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* line 642, ../sass/screen.scss */
+.footer-col-2 {
+  float: left;
+  margin-left: 35px;
+}
+
+/* line 646, ../sass/screen.scss */
+.footer-col-2 h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 13pt;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+/* line 653, ../sass/screen.scss */
+.address {
+  margin-top: 35px;
+}
+
+/* line 656, ../sass/screen.scss */
+.footer-col-2 img {
+  float: left;
+  display: block;
+}
+
+/* line 660, ../sass/screen.scss */
+.footer-col-2 p {
+  display: block;
+  float: left;
+  color: #ffffff;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 12pt;
+  max-width: 235px;
+}
+
+/* line 671, ../sass/screen.scss */
+.footer-col-3 {
+  float: left;
+  margin-left: 60px;
+}
+
+/* line 675, ../sass/screen.scss */
+.footer-col-3 h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 13pt;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* line 684, ../sass/screen.scss */
+.footer-col-3 input {
+  width: 210px;
+  border: 1px solid #e5e5e5;
+  outline: 0;
+  padding: 10px;
+  margin-bottom: 30px;
+  background: none;
+}
+
+/* line 692, ../sass/screen.scss */
+.footer-col-3 a.arrowsub {
+  width: 70px;
+  background: url(../image/icon/paper.png) no-repeat center center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0);
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+  height: 40px;
+}
+
+/* line 702, ../sass/screen.scss */
+.footer-col-3 a.arrowsub {
+  color: #000;
+  position: relative;
+  top: 15px;
+}
+
+/* line 703, ../sass/screen.scss */
+.footer-col-3 a.arrowsub:hover {
+  opacity: 0.7;
+}
+
+/* line 706, ../sass/screen.scss */
+.social-links a:not(:first-child) {
+  margin-left: 8px;
+}
+
+/* line 709, ../sass/screen.scss */
+.social-links {
+  margin-bottom: 70px;
+}
+
+/* line 712, ../sass/screen.scss */
+.Copyright {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: block;
+  font-size: 12pt;
+  color: white;
+}
+
+/* line 719, ../sass/screen.scss */
+.Copyright-1 {
+  float: left;
+  color: white;
+}
+
+/* line 723, ../sass/screen.scss */
+.Copyright-2 {
+  margin-left: 35px;
+  float: left;
+  color: white;
+}
+
+/* line 728, ../sass/screen.scss */
+.Copyright-3 {
+  float: right;
+  color: white;
+  margin-bottom: 70px;
+}
+
+/* line 733, ../sass/screen.scss */
+.client ul li {
+  cursor: pointer;
+}
